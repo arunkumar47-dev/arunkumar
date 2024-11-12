@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total{
+            width: 50%;
+            height: 50vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .total>div{
+            border: 2px solid black ;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="a1" onclick="changeimage(0)"></div>
+        <div class="a1" onclick="changeimage(1)"></div>
+        <div class="a1" onclick="changeimage(2)"></div>
+        <div class="a1" onclick="changeimage(3)"></div>
+        <div class="a1" onclick="changeimage(4)"></div>
+        <div class="a1" onclick="changeimage(5)"></div>
+        <div class="a1" onclick="changeimage(6)"></div> 
+        <div class="a1" onclick="changeimage(7)"></div>
+        <div class="a1" onclick="changeimage(8)"></div>
+    </div>
+   <script>
+ let image1="url('https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid')"
+ let image2="url('https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?cs=srgb&dl=pexels-pixabay-158063.jpg&fm=jpg')";
+
+
+
+let a1=['-','-','-','-','-','-','-','-','-']
+let image=image1;
+
+ function changeimage(index){
+    if(a1[index]=== '-'){
+        document.getElementsByClassName('a1')[index].style.backgroundImage=image;
+        a1[index]=image
+        if(winner(image)){
+            alert("winner!")
+            return;
+        }
+        image=(image===image1)?image2:image1
+    }else{
+        alert("select another box")
+    }
+    console.log(a1)
+ }
+
+ function winner(player){
+    return(
+        (a1[0]===player && a1[1]===player&&a1[2]===player)||
+        (a1[3]===player && a1[4]===player&&a1[5]===player)||
+        (a1[6]===player && a1[7]===player&&a1[8]===player)||
+        (a1[0]===player && a1[3]===player&&a1[6]===player)||
+        (a1[1]===player && a1[4]===player&&a1[7]===player)||
+        (a1[2]===player && a1[5]===player&&a1[8]===player)||
+        (a1[2]===player && a1[4]===player&&a1[6]===player)||
+        (a1[0]===player && a1[4]===player&&a1[8]===player)
+
+    );
+ }
+ document.getElementsByTagName("h1")[0].addEventListener("submit",(e)=>{
+e.preventDefault();
+
+ })
+ 
+
+   </script> 
+</body>
+</html>

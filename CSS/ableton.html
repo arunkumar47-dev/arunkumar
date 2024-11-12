@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .row{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        }
+        .r2{
+            display: flex;
+            gap: 6%;
+            align-items: center;
+
+        }
+        h3{
+            color: blue;
+        }
+        samp{
+            color: rgb(224, 83, 32);
+        }
+        .data{
+            display: flex;
+            gap: 3%;
+            margin-top: 2%;
+            margin-left: 3%;
+            /* position: sticky;
+            top: 0; */
+        }
+        .samp{
+            color: rgb(243, 109, 60);
+        }
+        .com{
+            height: 600px;
+        }
+        .photo{
+            margin-left: 10%;
+            margin-top: 2%;
+            position: relative;
+            /* width: 1%; */
+            /* height: 120vh; */
+        
+        }
+        .io1{
+            font-size: 160px;
+            color: rgb(177, 49, 49);
+            margin-top: 13%;
+            width: 100%;
+            height: 500px;
+
+        } 
+        .photo1{
+        background-image: url("https://ableton-production.imgix.net/about/header.jpg?fit=crop&amp;auto=format&amp;fm=jpg");
+        width: 80%;
+        padding: 20px;
+        height: 500px;
+        
+        
+text-align: center;
+        margin-left: 15%;
+        margin-top: 2%;
+        background-position: center;
+        background-size: cover;
+      }
+     
+        .cons{
+            width: 50%;
+            height: 300px;
+            /* text-align: center; */
+            margin-left: 30%;
+        }
+        .par{
+            font-size: 32px;
+        }
+        .par1{
+            font-size: 20px;
+            margin-top: 3%;
+        }
+        a{
+            text-decoration: none;
+            color:blue;
+            height: 60px;
+        }
+        .c{
+            gap: 5px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           /* height: 60px; */
+        }
+       .control{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 140vh;
+       }
+       .thired{
+        background-color: rgba(255, 220, 125, 0.815);
+        height: 700px;
+        width: 800px;
+        padding-top: 100px;
+        display: flex;
+        padding: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        padding-right: 50px;
+       }
+       .vid{
+        margin-left: 30%;
+        margin-bottom: 10%;
+       }
+       .img-contener{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        height: 160vh;
+       }
+       .img-cont{
+        background-color: rgb(184, 243, 157);
+        height: 900px;
+        width: 900px;
+       display: flex;
+      
+       justify-content: space-evenly;
+       padding-left: 90px;
+       flex-direction: column;
+       position: absolute;
+       left: 0;
+       }
+       .ab{
+        position: absolute;
+        right: 100px;
+        top: 200px;
+        height: 600px;
+       }
+       .photo-1{
+        height: 110vh;
+        margin-left: 15%;
+         }
+         .ff{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            height: 780px;
+            background-color: rgb(240, 186, 240);
+            margin-left: 20%;
+            position: relative;
+         }
+         .f2{
+         position: absolute;
+         left: 60%;
+
+         }
+         .f1{
+            position: absolute;
+            right: 70%;
+         }
+         .con{
+            margin-bottom: 5%;
+         }
+         .l2{
+            background-color: rgb(120, 166, 219);
+            width: 50%;
+            height: 500px;
+            font-size: 30px;
+            margin-bottom: 8%;
+         }
+         .last{
+            display: flex;
+            margin-top: 5%;
+            justify-content: center;
+            align-items: center;
+            padding: 90PX;
+            /* height: 190vh; */
+         }
+         .lp{
+            width: 50%;
+            text-align: center;
+            margin-top: 20%;
+            margin-left: 20%;
+            margin-bottom: 5%;
+         }
+         .foot{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly; 
+            height: 40vh;   
+         }
+         .size3{
+            width: 40%;
+         }
+         .size{
+            margin-left: 6%;
+            font-size: 60px;
+            font-weight: 200;
+         }
+         .f-par > p{
+            font-size:20px;
+            margin-top: 5px;
+
+         }
+         .f-par4{
+            font-size:20px;
+            margin-top: 5px;
+         }
+         .size1{
+            gap: 5%;
+         }
+         .size2{
+            gap: 5%;
+         }
+         input{
+            width: 60%;
+            height: 50px;
+            border: 3px solid black;
+            background-color:rgb(207, 241, 247)
+            
+          } 
+      button{
+        width: 20%;
+        height: 48px;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        border: 2px solid blue; 
+      }
+     
+      .common{
+        width: 50%;
+        height: 25vh;
+        display: flex;
+        justify-content: space-evenly; 
+        /* align-items: flex-start; */
+      }   
+      .jj{
+        margin-top: 3%;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: space-evenly 
+     
+      }
+      .j1{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        margin-right: 40%;
+      }
+     .j2{
+        display: flex;
+        justify-content: space-between;
+         /* margin-left: 20%; */
+
+     }
+     .ed{
+        margin-top: 3%;
+     }
+    </style>
+ <div class="row">
+ <div class="r2">
+        <img src="./../Screenshot from 2024-06-20 13-21-54.png" alt="">
+        <h2>Live</h2>
+        <h2>Push</h2>
+        <h2>Note</h2>
+        <h2>Link</h2>
+        <h2>Shop</h2>
+        <h2>Packs</h2>
+        <h2>Help</h2>
+        <h2><samp>More+</samp></h2>
+    </div>
+    <div class="c">
+    <div class="r3">
+        <h3>Try Live 12 for free</h3>
+    </div>
+    <div class="r4"></div>
+        <h4>log in our register</h4>
+    </div>
+ </div>
+ </div>
+ </div>
+
+
+ <div class="data">
+    <div class="samp"><h4>About</h4></div>
+    <h4>Jobs</h4>
+    <h4>Apprenticeships</h4>
+ </div>
+  <div class="com">
+ <!-- <div class="photo"> -->
+    <!-- <img src="https://ableton-production.imgix.net/about/header.jpg?fit=crop&amp;auto=format&amp;fm=jpg" alt="" class="io">  -->
+ <!-- </div> -->
+ <div class="photo1">
+    <p class="io1">Ableton</p>
+ </div>
+  </div>
+
+  <div class="cons">
+  <div class="par">
+    <p>We make <a href="https://www.ableton.com/en/live/">Live</a> ,<a href="https://www.ableton.com/en/live/">Push</a>,<a href="https://www.ableton.com/en/live/">Note</a> and <a href="https://www.ableton.com/en/live/">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.</p>
+  </div>
+   <div class="par1">
+    <p>Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.</p>
+   </div>
+  </div>
+  <div class="control " style="position: relative;">
+    <div class="second">
+        <img src="https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop" alt=""  width="600"  height="500px" style="position: absolute;top: 80px; left: 130px;z-index: 1;">
+    </div>
+    <div class="thired">
+        <div>
+        <img src="https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop" width="500"
+         height="350px" style="z-index: 0;">
+        </div>
+    </div>
+   </div>
+
+   <div class="cons">
+    <div class="par">
+      <p>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.</p>
+    </div>
+     <div class="par1">
+      <p>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</p>
+     </div>
+    </div>
+
+    <div class="vid">
+    <iframe width="650" height="400" src="https://www.youtube-nocookie.com/embed/9SbnhgjeyXA?si=ZjcEl-sYL2YvMbB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+    </div>
+   
+    <div class="cons">
+        <div class="par">
+          <p>We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</p>
+        </div>
+         <div class="par1">
+          <p>Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</p>
+         </div>
+        </div>
+        <div class="img-contener">
+    <div class="img-cont">
+      <div class="img-1">
+        <img src="https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop" alt="" width="500" height="300px">
+      </div>
+       <div class="img-2">
+        <img src="https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop" alt="" width="500" height="300px">
+       </div>
+    </div>
+        <img src="https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop" alt="" width="500" height="700px" class="ab">
+</div>
+
+
+<div class="cons">
+    <div class="par">
+      <p>We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.</p>
+    </div>
+     <div class="par1">
+      <p>Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.</p>
+     </div>
+    </div>
+
+    <div class="photo-1">
+        <img src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&fit=crop&fm=jpg&ixjsv=1.1.3&w=1067" alt="">
+    </div>
+
+    <div class="cons">
+        <div class="par">
+          <p>We’re passionate about what we do, but we’re equally passionate about improving who we are.</p>
+        </div>
+         <div class="par1">
+          <p>
+            We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
+<br>
+Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.
+          </p>
+         </div>
+        </div>
+         <div class="con">
+        <div class="ff">
+            <div class="f1">
+                <img src="https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop" alt="" width="400" height="360px">
+             </div>
+             <div class="f2">
+                <img src="https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop" alt="" width="500" height="600px"> 
+             </div> 
+        </div>
+         </div>
+         <div class="cons">
+            <div class="par">
+              <p>  We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.</p>
+            </div>
+             <div class="par1">
+              <p> If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.</p>
+             </div>
+            </div>
+<div class="last">
+    <div class="l1">
+        <img src="https://ableton-production.imgix.net/about/photo-8.jpg?" width="600" height="600px">
+    </div>
+    <div class="l2">
+        <p class="lp">We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
+            <br>
+           <span style="color: blue; ;">See latest jobs ></span>
+            </p>
+    </div>
+   </div>
+
+   
+    <div class="size">
+        <p>Ableton</p>
+    </div>
+    <br>
+    <div class="foot">
+       <div class="size1">
+        <div class="f-par">
+        <p>Register Live or Push></p>
+        <p>About Ableton></p>
+        <p>Jobs></p>
+        </div>
+        <img src="../Screenshot from 2024-06-27 11-47-24.png" alt="">
+    </div>
+        <div class="size2">
+            <h2>Education</h2>
+            <div class="f-par">
+            <p>Offers for students and teachers></p>
+            <p>Ableton for the Classroom</p>
+            <p>Ableton for Colleges and Universities</p>
+            </div>
+        </div>
+        <div class="size3">
+            <h2>Sign up to our newsletter</h2>
+            <div class="f-par4">
+            <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
+            </div>
+            
+            <form action="">
+                <input type="search" placeholder="Email Address">
+                <button>Sing up</button>
+            </form>       
+        </div>
+   </div>
+     
+   <div class="common">
+    <div class="c1">
+        <h2>Community</h2>
+        <div class="f-par">
+        <p>Find Ableton User Groups></p>
+        <p>Find Certified Training></p>
+        <p>Become a Certified Trainer></p>
+    </div>
+    </div>
+    <div class="c2">
+        <h2>Language and Location</h2>
+        <select>
+            <option value="">English</option>
+        </select>
+        <select>
+            <option value="">India</option>
+        </select>
+    </div>
+   </div>
+
+<div class="jj">
+    <div class="j1">
+    <p>Contact </p>
+    <p>Resources </p>
+     <p>Info</p> 
+     <p>Policy policy</p> 
+     <p> CookieSettings</p>
+     <p>Imprint</p>
+    </div>
+     <div class="j2">
+       <p class="ed">Made in Berlin</p> 
+       <img src="../Screenshot from 2024-06-20 13-21-54.png" alt="" width="55" height="30px">
+     </div>
+     
+</div>
+
+</body>
+</html>

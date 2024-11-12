@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="doc">
+
+    </div>
+    <script>
+        fetch("https://api.escuelajs.co/api/v1/categories")
+        .then(a =>a.json())
+        .then(b =>{
+             console.log(b)
+            //  for(let i=0;i<b.length;i++){
+            //     let div=document.createElement('div')
+
+            //     let num=document.createElement('h3')
+            //     num.textContent=b[i].id
+
+            //     let name=document.createElement('h1')
+            //     name.textContent=b[i].name
+
+            //     let img=document.createElement('img')
+            //     img.src=b[i].image
+
+            //     div.append(num,name,img)
+            //     document.getElementById('doc').append(div)
+
+            //  }
+        }
+    )
+    </script>
+</body>
+</html>

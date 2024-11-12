@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    #ak{
+      width: 30%;
+      height: 190px;
+      border: 2px solid black;
+      margin-left: 35%;
+      margin-top: 17%;
+      background-size: cover;
+      background-position:center;
+    } 
+    .d{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 90px;
+        
+    }
+    
+</style>
+
+
+<body>
+    <!-- <div class="a" >
+   saranya
+    </div>
+    <button onclick="changecontent()">click</button>
+    <script>
+   function changecontent(){
+    let divcontent=document.getElementsByClassName('a')[0].innerHTML;
+    if(divcontent=="saranya"){
+        document.getElementsByClassName('a')[0].style.backgroundImage=url(`https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1707920217641.jpg`);
+        document.getElementsByClassName('a')[0].innerHTML="arun";
+    }else{
+        document.getElementsByClassName('a')[0].style.backgroundColor="blue";
+        document.getElementsByClassName('a')[0].innerHTML="saranya";
+    }
+   } -->
+
+    <!-- </script> -->
+
+    <!-- <div id="ak">
+
+    </div> 
+    <div class="d">   
+    <button onclick="changeimage()" id="bu1">previous</button>
+    <button onclick="changeimage1()" id="bu2">next</button>
+    </div>
+    <script>
+        function changeimage(){
+       let element=document.getElementById('ak');
+       element.style.backgroundImage="url('https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1707920217641.jpg')"
+       element.style.backgroundSize="100% 100%"
+       }
+       function changeimage1(){
+       let element=document.getElementById('ak');
+       element.style.backgroundImage="url('https://bd.gaadicdn.com/processedimages/yamaha/mt-15-2-0/source/mt-15-2-06613f885e681c.jpg')"
+       element.style.backgroundSize="100% 100%"
+       }
+
+    </script> -->
+
+    <div id="ak">
+
+    </div> 
+    <div class="d">   
+    <button onclick="changeimage()" id="bu1">previous</button>
+    <button onclick="changeimage1()" id="bu2">next</button>
+    </div>
+   
+    <script>
+        let arr=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCkMdSk0yMFJhZQ5_IPcZOpKGDxc-lqfSR3A&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgcP0zyotiW8LKIeGqYM1rumg8jCrO7z-fLA&s","https://www.shutterstock.com/image-illustration/elephant-zebra-skin-studio-concept-600nw-1459474760.jpg","https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?cs=srgb&dl=pexels-daniel-reche-718241-1556707.jpg&fm=jpg","https://static.vecteezy.com/system/resources/previews/008/946/407/non_2x/tree-in-two-with-very-different-environments-earth-day-or-world-environment-day-global-warming-and-pollution-photo.jpg"]
+
+        let i=0
+        function changeimage(){
+            i++;
+            if(i>=arr.length){
+                i=0
+            }
+            document.getElementById('ak').style.backgroundImage='url('+arr[i]+')';
+            console.log(a[i])
+        }
+        function changeimage1(){
+            i--;
+            if(i<0){
+              i=arr.length-1
+            }
+            document.getElementById('ak').style.backgroundImage='url('+arr[i]+')';
+        }
+    </script>
+ 
+</body>
+</html>

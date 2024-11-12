@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  a=[ '-','-','-','-','-','-','-','-','-'];
+        let players='X';
+        for(let i=0;i<9;i++){
+            let num = Number(prompt("enter your number"))
+            if(move(players,num)){
+                  display(a);
+                  if(winner(a,players)){
+                    break;
+                  };
+                players=players=='X'?'O':'X';
+                console.log(players);
+            }
+            else{
+                i--;
+                continue;
+            }
+        }
+        
+       function move(p,pos){ 
+        if(a[pos-1]=='-'){
+            a[pos-1]=p;
+            return true;
+        }else{
+            console.log("invalid move");
+            return false;
+        }
+    }
+    function display(a){
+        console.log(a[0]+" | "+a[1]+" | "+a[2]);
+        console.log(a[3]+" | "+a[4]+" | "+a[5]);
+        console.log(a[6]+" | "+a[7]+" | "+a[8]);
+    }
+    function winner(a, player) {
+        if(a[0]==player && a[1]==player && a[2]==player||a[3]==player && a[4]==player && a[5]==player||a[6]==player && a[7]==player && a[8]==player||a[0]==player && a[3]==player && a[6]==player||a[1]==player && a[4]==player && a[7]==player||a[2]==player && a[5]==player && a[8]==player||a[2]==player && a[4]==player && a[6]==player||a[0]==player && a[4]==player && a[8]==player){
+            console.log("x is winner");
+            return true;
+        }
+        return false;
+        }
+
+    
+
+
+    </script>
+</body>
+</html>

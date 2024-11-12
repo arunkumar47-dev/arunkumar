@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dd{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        gap: 20px;
+        background-color: blue;
+    }
+   
+    .d1 {
+        width: 60%;
+        height: 200px;
+        background-color: red;
+        border: 15px solid black;
+        margin-left: 25%;
+    }
+  @media screen and (max-width:720px) {
+    .dd {
+        grid-template-columns: auto auto;
+        background-color: burlywood;
+    }
+}
+    @media screen and (max-width:420px) {
+    .dd {
+        grid-template-columns: auto;
+        background-color: orange;
+    }
+    
+  }
+   </style>
+<body>
+    <div class="dd">
+    <div class="d1"></div>
+    <div class="d1"></div>
+    <div class="d1"></div>
+    <div class="d1"></div>
+    <div class="d1"></div>
+    <div class="d1"></div>
+
+    </div>
+
+    
+</body>
+</html>

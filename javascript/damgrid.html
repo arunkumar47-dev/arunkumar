@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     /* .total{
+        width: 70%;
+        height: 400px;
+        border: 2px solid black;
+        text-align: center;
+        gap: 4px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+     }
+    
+.a1{
+    border: 2px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+
+</style>
+
+<body>
+    
+
+
+    <div class="total">
+        <div class="a1" onclick="changeimage(0)"></div>
+        <div class="a1" onclick="changeimage(1)"></div>
+        <div class="a1" onclick="changeimage(2)"></div>
+        <div class="a1" onclick="changeimage(3)"></div>
+        <div class="a1" onclick="changeimage(4)"></div>
+        <div class="a1" onclick="changeimage(5)"></div>
+        <div class="a1" onclick="changeimage(6)"></div> 
+        <div class="a1" onclick="changeimage(7)"></div>
+        <div class="a1" onclick="changeimage(8)"></div>
+    </div>
+    <!-- <button onclick="changeimage()">click</button> -->
+    <script>
+        function changeimage(b){
+            let a="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg"
+             for(let i=0;i<9;i++){
+                if(i===b){
+               document.getElementsByClassName('a1')[b].style.backgroundImage=`url(${a})`
+                }else{
+              document.getElementsByClassName('a1')[i].style.backgroundImage=`url()`
+                }
+        }
+    }
+    </script> */
+
+
+
+
+.total{
+    width: 70%;
+    height: 400px;
+    border: 2px solid black;
+    text-align: center;
+    gap: 4px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+ }
+
+.a1{
+border: 2px solid black;
+background-position: center;
+background-size: cover;
+}
+
+
+</style>
+
+
+<body>
+
+
+
+<div class="total">
+    <div class="a1" onclick="changeimage(0)"></div>
+    <div class="a1" onclick="changeimage(1)"></div>
+    <div class="a1" onclick="changeimage(2)"></div>
+    <div class="a1" onclick="changeimage(3)"></div>
+    <div class="a1" onclick="changeimage(4)"></div>
+    <div class="a1" onclick="changeimage(5)"></div>
+    <div class="a1" onclick="changeimage(6)"></div> 
+    <div class="a1" onclick="changeimage(7)"></div>
+    <div class="a1" onclick="changeimage(8)"></div>
+</div>
+<script>
+    let img="url('https://static.toiimg.com/photo/101080863/101080863.jpg?v=3')"
+
+    let img1="url('https://static.toiimg.com/photo/101080863/101080863.jpg?v=3')"
+
+    let img2="url('https://i.pinimg.com/736x/f7/f8/93/f7f8931a092f0c96a81d2f9f32daceca.jpg')"
+
+    function changeimage(index){
+       document.getElementsByClassName('a1')[index].style.backgroundImage=img;
+            if(img==img2){
+                img=img1;
+            }else{
+        img=img2
+            }
+            console.log(img)
+    }
+</script>
+</body>
+</html>

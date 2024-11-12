@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        .frontpage{
+          height: 120vh;
+        }
+      .front{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        left: 3%;
+        height: 60px;
+       background-color: #1a2456;
+       color: #ff8b68;
+       position: absolute;
+       z-index: 3;
+       top: 2%;
+       position: fixed;
+       top: 0;
+       margin-top: 2%;
+      }
+      .p1{
+        font-size: 16px;
+      }
+      .f-nav1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%; 
+       align-items: center;
+      }
+      .f-nav{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+       
+      }
+      .img{
+        background-image: url("https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp");
+        width: 1400px;
+        height: 700px;
+        position: absolute;
+        z-index: 2;
+      }
+      
+      .par{
+        width: 30%;
+        position: absolute;
+        bottom: 35%;
+        left: 35%;
+      }
+      .par1{
+        font-size: 40px;
+        text-align: center;
+        color:  #f0efed 
+        /* text-align:; */
+      }
+      .par2{
+        font-size: 22px;
+        text-align: center;
+        color:  #f0efed
+      }
+    
+       .f-pa{
+        margin-top: 1%;
+       }
+     .black{
+        background-color: black;
+        width: 1400px;
+        height: 700px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        opacity: 0.7;
+     }
+     .com{
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center; 
+      gap: 2%; 
+      /* position: relative;  */
+      }
+    .f1{
+      font-size: 20px;
+      color: #1a2456;
+      /* margin-top: 2%;? */
+      
+    }
+    .com p{
+      color: #1a2456;
+      margin-top: 2%;
+    }
+    .com1{
+     position: relative;
+    
+     
+    }
+    
+    .ab{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      background-color: #ff8b68;
+      width: 130px;
+      height: 30px;
+      text-align: center;
+      padding-top: 1%;   
+
+    }
+    .com2{
+      position: relative;
+    
+      /* height: ; */
+    }
+    .ab1{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      background-color: #ff8b68;
+      width: 130px;
+      height: 30px;
+      text-align: center;
+      padding-top: 1%;   
+
+    }
+    .com3{
+      position: relative;
+    }
+    .ab2{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      background-color: #ff8b68;
+      width: 130px;
+      height: 30px;
+      text-align: center;
+      padding-top: 1%;   
+    }
+    .com4{
+      position: relative;
+    }
+    .ab3{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      background-color: #ff8b68;
+      width: 130px;
+      height: 30px;
+      text-align: center;
+      padding-top: 1%;   
+    }
+    .key{
+      margin-top: 5%;
+      /* height: 120vh; */
+      display: flex;
+      justify-content: center;
+      /* width: 80%;  */
+
+    }
+  
+   .f p{
+    color: #1a2456;
+    margin-top: 1%;
+   }
+   .f{
+    margin-left: 4%;
+   }
+   .th{
+    margin-top: 3%;
+    position: relative;
+   }
+   .p1{
+    font-size: 25px;
+    color: #1a2456;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 22%;
+    bottom: 3%;
+     }
+   h1{
+    color: #1a2456;
+    text-align: center;
+   }
+   .four{ 
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-evenly;
+    /* gap: 3%; */
+   }
+   .four p{
+    color: #1a2456;
+    font-size: 25px;
+    width: 60%;
+   }
+   .y1{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    background-color: #ff8b68;
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      padding-top: 1%;   
+      font-size: 13px;
+  
+   }
+   .y2{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y3{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%; border: 2px solid blac
+    left: 70%;
+   }
+   .y4{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y5{
+    position: relative;
+   } border: 2px solid blac
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y6{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y6{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y7{
+    position: relative;
+   }
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .y8{
+    position: relative;
+   } border: 2px solid blac
+   .cc{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+   }
+   .footer{
+    height: 60vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+   background-color: #1a2456;
+   padding-top: 5%;
+    
+   }
+   .fo-1{
+    color: #ff8b68;
+    width: 9%;
+    gap: 3%;
+    
+   }
+   .fo-1 p{
+    margin-top: 10%;
+   }
+   .fo-2{
+    color: #ff8b68;
+   }
+   .fo-2 h3{
+    margin-top: 10%;
+    font-size: 15px;
+
+   }
+   .fo-3{
+    color: #ff8b68;
+   }
+   .fo-3 h3{
+    margin-top: 10%;
+    font-size: 15px;
+
+   }
+   .fo-4{
+    color:#ff8b68 
+    }
+  .fo-4 h3{
+    margin-top: 10%;
+    font-size: 15px;
+  } 
+  .fo-5{
+    color: #ff8b68;
+    width: 25%;
+  }
+  .fo-5 p{
+    margin-top: 5%;
+  }
+  .in{
+    width: 52%;
+    margin-top: 3%;
+    height: 33px;
+    background-color: #1a2456;
+    border: 2px solid white;
+    margin-bottom: 5%; border: 2px solid blac
+  }
+  .bu{
+    width: 30%;
+    height: 33px;
+    border: 2px solid #012af8;
+    border-radius: 15px;
+    background-color: #ff8b68;
+    color: #1a2456;
+  }
+  .im1{
+    background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-horizontal_1366x911_crop_center.jpg.webp?v=1668446709");
+    width: 580px;
+    height: 450px;
+    background-size: cover; 
+    transition: background-image 0.3s ease-in-out; 
+   
+   
+    
+  }
+  .im1:hover{
+   background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-final_1366x911_crop_center.jpg.webp?v=1660013247");
+  
+ }  
+ .im2{
+    background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_TravelerBracket1_Monogram_May2020_4561_30a35bd4-01b4-44db-894a-e06162d8ab77_1366x911_crop_center.jpg.webp?v=1668433146");
+    width: 580px;
+    height: 450px;
+    background-size: cover; 
+    transition: background-image 0.3s ease-in-out; 
+   
+    
+  }
+  .im2:hover{
+   background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_TravelerClosedBracket1_Monogram_May20204517_d3899632-1a43-425f-a16a-1d5b968810c7_1366x911_crop_center.jpg.webp?v=1623682377");
+ }  
+
+ .im3{
+    background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_StudioBracket1_Monogram_May2020_4558_53685b21-b09f-45b0-85a2-180d6acfafac_1366x911_crop_center.jpg.webp?v=1668433210");
+    width: 580px;
+    height: 450px;
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out; 
+   
+    
+  }
+  .im3:hover{
+   background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_StudioClosedBracket1_Monogram_May20204507_548446cb-17c9-4fc2-8b12-ae1b1a308a7e_1366x911_crop_center.jpg.webp?v=1623269261");
+ }  
+ .im4{
+    background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_MasterBracket1_Monogram_May2020_4555_1366x911_crop_center.jpg.webp?v=1668433240");
+    width: 580px;
+    height: 450px;
+    background-size: cover; 
+    transition: background-image 0.3s ease-in-out; 
+   
+    
+  }
+  .im4:hover{
+   background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/products/Packaging_MasterClosedBracket1_Monogram_May20204494_1366x911_crop_center.jpg.webp?v=1623682600");
+ }  
+ .key{
+    background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_2_878639a5-2865-4c4f-a21e-498f3a3db3b8_1366x768_crop_center.jpg.webp?v=1712087494");
+    width: 1400px;
+    height: 500px;
+    background-size: cover; 
+    transition: background-image 0.3s ease-in-out; 
+    background-position: center;
+   
+    
+  }
+  .key:hover{
+   background-image: url("https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_Multipad-v2_1366x925_crop_center.png.webp?v=1711651403");
+ }  
+ .u1{
+    width: 110px;
+    height: 33px;
+    border: 2px solid #1a2456;
+    border-radius: 15px;
+    background-color: #1a2456;
+    color: #f0efed;
+    display: none;
+
+ }
+ .com1:hover .u1{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 455px;
+  /* top: 2px; */
+ }
+ #a:hover .u1{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 455px;
+ }
+ .bi{
+  position: absolute;
+  right: 0;
+  top: 455px;
+
+ }
+ #b:hover .bi{
+  position: absolute;
+  right: 0;
+  top: 455px;
+  display: block;
+ }
+ .u1:hover .bi{
+   display: block; 
+
+ }
+ 
+
+
+
+    </style>
+ 
+    <div class="frontpage">
+        <div class="img">
+            <div class="black">
+   
+    <div class="par">
+    <div class="par1">
+       <p>A CONSOLE FOR EVERY WORKFLOW</p>
+    </div>
+    <div class="par2">
+    <p>Discover the perfect console for yours.</p>
+    </div>
+</div>
+    </div>
+</div>
+<div class="front">
+    <div class="f-nav">
+        <img src="../Screenshot from 2024-06-28 12-45-17.png" alt="" width="60" height="60px">
+        <p>MONOGRAM</p >
+    </div>
+    <div class="f-nav1">
+        <p>HOW TO WORK</p>
+        <P>WORK FORMS</P>
+        <P>DOWNLOAD</P>
+        <P>BLOG</P>
+        <P>SUPPORT</P>
+        <P>SHOP</P>
+        <img  src="../Screenshot from 2024-06-28 11-09-01.png" alt="" width="30" height="30px"  class="sc1">
+        <p>GBP</p>
+    </div>
+</div>
+    </div>
+
+    
+<div class="com">
+  <div class="com1" id="a">
+    <div class="im1">
+    </div>
+     <p class="f1">MINI CONSOLE</p> 
+    <p>Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+    <p class="bi">£200</p>
+    <div class="ab">
+    <h5>PRE-ORDER</h5>
+    </div>
+      <button class="u1">SHOP NOW</button>
+  </div>
+  
+  <div class="com2" id="a">
+    <div class="im2"></div>
+    <!-- <img
+src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_TravelerBracket1_Monogram_May2020_4561_30a35bd4-01b4-44db-894a-e06162d8ab77_1366x911_crop_center.jpg.webp?v=1668433146" alt="" width="580" height="450px"> --> 
+  <p class="f1">AUDIO CONSOLE</p>
+  <p>Ideal for music & audio. Adaptable to any workflow.</p>
+  <p class="bi" id="b">£400</p>
+  <div class="ab1">
+    <h5>PRE-ORDER</h5>
+    </div>
+    <button class="u1">SHOP NOW</button>
+  </div>
+  
+   <div class="com3" id="a">
+    <div class="im3"></div>
+    <!-- <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_StudioBracket1_Monogram_May2020_4558_53685b21-b09f-45b0-85a2-180d6acfafac_1366x911_crop_center.jpg.webp?v=1668433210" alt="" width="580" height="450px"> -->
+   <p class="f1">PHOTO CONSOLE</p>
+   <p> Ideal for photo & video. Adaptable to any workflow.</p>
+   <p class="bi">£450</p>
+   <div class="ab2">
+    <h5>PRE-ORDER</h5>
+    </div>
+    <button class="u1">SHOP NOW</button>
+   </div>
+   <div class="com4" id="a">
+    <div class="im4"></div>
+    <!-- <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_MasterBracket1_Monogram_May2020_4555_1366x911_crop_center.jpg.webp?v=1668433240" alt="" width="580" height="450px"> -->
+    <p class="f1">VIDEO CONSOLE</p>
+    <p>Ideal for Video & Film. Adaptable to any workflow.</p>
+    <p class="bi">£720</p>
+    <div class="ab3">
+      <h5>PRE-ORDER</h5>
+      </div>
+      <button class="u1">SHOP NOW</button>
+   </div>
+</div>
+
+
+
+   <div class="key">
+   </div>
+  
+   <!-- <img src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_2_878639a5-2865-4c4f-a21e-498f3a3db3b8_1366x768_crop_center.jpg.webp?v=1712087494" alt="" width="1300" height="500px">  -->
+    <div class="f">
+    <div class="f1">
+      <p>MONOGRAM KEYBOARD + MULTIPAD</p>
+    </div>
+   <p>Adaptable to any workflow.</p>
+    </div>
+   
+
+<div class="th">
+   <img src="https://monogramcc.com/static/fb6b98aa90bbce383e12a09c50936e96/9ee2a/shop-banner-module.webp" alt="" width="1400" height="500px">
+<div class="p1">
+  <h1>CREATE YOUR OWN CONSOLE</h1>
+  <p class="p">Add-on to make it perfect.</p>
+</div>
+</div>
+
+<div class="four">
+  <div class="y1">
+<img 
+src="https://cdn.shopify.com/s/files/1/0974/7950/files/preview_images/d1564dbc344144d594c1e602d3ab46d7.thumbnail.0000000000_1366x768_crop_center.jpg.webp?v=1712243546" alt="" width="350" height="350">
+ <p>MONOGRAM KEYBOARD</p>
+ <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y2">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_3_45ca86e3-ee84-48a0-b55d-c991d2e57e3c_1366x768_crop_center.jpg.webp?v=1712087520" alt=""  width="350" height="350">
+  <p>MONOGRAM MULTIPAD</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y3">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_CoreBracket1_Monogram_May2020_4578_6683fd8e-be63-45bb-9fbd-dd82a4838db8_1366x911_crop_center.jpg.webp?v=1593651640" alt=""  width="350" height="350">
+  <p>MONOGRAM CORE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y4">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_SliderBracket1_Monogram_May2020_4565_f941e8d9-d194-47ee-a54a-79132f105e34_1366x911_crop_center.jpg.webp?v=1593651879" alt=""  width="350" height="350">
+  <p>SLIDER MODULE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y5">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849" alt=""  width="350" height="350">
+  <p>ORBITER MODULE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y6">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_KeysBracket1_Monogram_May2020_4571_43b65ca9-4fde-4f55-9f0e-32374554ce76_1366x911_crop_center.jpg.webp?v=1593651769" alt=""  width="350" height="350">
+  <p>ESSENTIAL KEYS MODULE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+ <div class="y7">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_DialBracket1_Monogram_May2020_4575_981a6401-f834-4094-9a6e-6cd7d0b374ca_1366x911_crop_center.jpg.webp?v=1593651701" alt=""  width="350" height="350">
+  <p>DIAL MODULE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+ </div>
+<div class="y8">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp?v=1661441054" alt=""  width="350" height="350">
+  <p>MONOGRAM CARRYING CASE</p>
+  <h4 class="cc">PRE-ORDER</h4>
+</div>
+<div class="y9">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp?v=1661441054" alt=""  width="350" height="350">
+  <p>CONSOLE PACK: VIDEO</p>
+  
+</div>
+<div class="y10">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-photo-final-august_1366x984_crop_center.jpg.webp?v=1661440997" alt=""  width="350" height="350">
+  <p>CONSOLE PACK: PHOTO</p>
+</div>
+<div class="y11">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-midi-final-august_1366x984_crop_center.jpg.webp?v=1661440892" alt=""  width="350" height="350">
+  <p>CONSOLE PACK: AUDIO</p>
+  
+</div>
+<div class="y12">
+  <img src="https://cdn.shopify.com/s/files/1/0974/7950/products/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpg.webp?v=1633485492" alt=""  width="350" height="350">
+  <p>MONOGRAM CARE</p>
+  
+</div>
+</div>
+
+<div class="footer">
+  <div class="fo-1">
+    <h5>MONOGRAM</h5>
+
+ <p>305 King St. W.
+Suite 502
+Kitchener, ON
+Canada</p>
+  </div>
+  <div class="fo-2">
+  <h5>QUICK LINKS</h5>
+
+ <h3>Home</h3>
+  <h3>How it Works</h3>
+ <h3>Shop</h3>
+<h3>Download</h3>
+  </div>
+  <div class="fo-3">
+   <h5>HELP</h5>
+
+ <h3>FAQs</h3> 
+  <h3>Support Center</h3>
+ <h3>Shipping and Sales</h3>
+  </div>
+  <div class="fo-4">
+    <h5>INFORMATION</h5>
+
+<h3>About Us</h3>
+<h3>Work with us</h3>
+<h3>Privacy Policy</h3>
+<h3>Terms of Use</h3>
+<h3>Terms of Sale</h3>
+<h3>Press Kit</h3>
+  </div>
+  <div class="fo-5">
+    <h5>SUBSCRIBE TO MONOGRAM</h5>
+<p>Master productivity with Creative Console and get all the latest Monogram news.</p>
+ <input class="in" type="search" placeholder="Email Address" >
+ <button class="bu">SUBMIT</button>
+ <img src="../Screenshot from 2024-07-02 12-29-53.png" alt="">
+ <p>© Monogram 2024</p>
+  </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
+

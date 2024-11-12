@@ -1,0 +1,157 @@
+/* .head1{
+  width: 750px;
+  border: 2px solid black;
+  display: flex;
+  margin-top: 80px;
+gap: 12PX;
+padding: 2%;
+background-color: bisque;
+  
+}
+.v1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.img1{
+width: 500px;
+box-shadow: 0px 10px 10px black;
+}
+.cont2{
+color:chocolate;
+}
+h1{
+  color: brown;
+} */
+ /* .img1{
+  width: 400px;
+ }
+ .img2{
+  width: 400px;
+ }
+ .img3{
+  width: 400px;
+ }
+  */
+  .first{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav{
+    width: 23%;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#e8e5e480 ;
+    color: #000000c0;
+    position: fixed;
+  }
+  button{
+    width: 100px;
+    height: 42px;
+    border: 2px solid #000000c0;
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  .para1{
+    font-size: 70px;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 220px; 
+    text-align: center;  
+    margin-top: 10%;
+  }
+  .bar2{
+    display:flex;
+    justify-content: space-around;
+    width: 28%;
+  }
+  .bar1{
+    width:100% ;
+    display: flex;
+    justify-content:center ;
+    margin-bottom: 5%;
+  
+  }
+  .vid{
+    width: 95%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-left: 25px;
+    gap: 28px;
+
+  }
+  img{
+    width: 600px;
+    height: 440px;
+    border-radius: 20px;
+  }
+  video{
+    width: 600px;
+    height: 440px;
+    border-radius: 20px;
+  }
+  img,video{
+    object-fit: cover;
+  }
+  .img1:hover {
+    opacity:0.3;
+   
+  }
+.gray{
+  background-color: #7f7f7f;
+  border-radius: 20px;
+}
+.gray:hover .img2{
+  opacity: 0.3 ;
+ 
+}
+.img3:hover {
+  opacity:0.3;
+ 
+}
+.img4:hover {
+  opacity:0.3;
+ 
+}
+.img5:hover {
+  opacity:0.3;
+ 
+}
+.img6:hover {
+  opacity:0.3;
+ 
+}
+.img7:hover {
+  opacity:0.3;
+ 
+}
+.img8:hover {
+  opacity:0.3;
+ 
+}
+.img9:hover {
+  opacity:0.3;
+ 
+}
+.img10:hover {
+  opacity:0.3;
+ 
+}
+.img11:hover {
+  opacity:0.3;
+ 
+}
+.img12:hover {
+  opacity:0.3;
+ 
+}

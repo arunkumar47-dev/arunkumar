@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let gender = prompt("enter your gender:");
+      let age = Number(prompt("enter your age:"));
+      let blood = Number(prompt("enter the blood level:"));
+
+      if (gender == "m") {
+        if (age >= 12 && age <= 18) {
+          if (blood >= 13.0 && blood <= 16.0) {
+            console.log("male blood level normal");
+          } else {
+            console.log("male blood level abnormal");
+          }
+        } else if (age > 18) {
+          if (blood >= 13.6 && blood <= 17.7) {
+            console.log(" 18 above male blood level normal");
+          } else {
+            console.log(" 18 above male blood level abnormal");
+          }
+        } else {
+          console.log("age not defind");
+        }
+      } else if (gender == "f") {
+        console.log("female");
+        if (age >= 12 && age <= 18) {
+          if (blood >= 12.0 && blood <= 16.0) {
+            console.log("female blood level normal");
+          } else {
+            console.log("female blood level abnormal");
+          }
+        } else if (age > 18) {
+          if (blood >= 12.1 && blood <= 15.1) {
+            console.log(" 18 above female blood level normal");
+          } else {
+            console.log(" 18 above female blood level abnormal");
+          }
+        } else {
+          console.log("age not defind");
+        }
+      } else {
+        console.log("no gender");
+      }
+    </script>
+  </body>
+</html>

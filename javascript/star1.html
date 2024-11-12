@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let x=Number(prompt("enter the number:"))
+        // for(y=1;y<=x;y++){
+        //     document.write("*");   
+        // }
+        //  let sum=0;
+        // for(let i=0;i>=10;i++){
+        //         console.log(i)
+        //         // sum+=<
+        // }
+        // console.log(sum)
+
+        // let a=[1,2,3,4,5,6,7,8,9]
+        // for(let i=a.length-1;i>=0;i--){
+        //     console.log(a[i])
+        // }
+
+    //     let x=[41,42,43,44,45,46,47,48,49,50]
+    //     for(y=0;y<=9;y++){
+    //         if(y%2==1){
+    //         console.log(x[y])
+    //     }
+    // }       
+    // let x=[41,42,43,44,45,46,47,48,49,50]
+    // let y=x.length-5;
+    // for(let i=0;i<x.length/2;i++){
+    //   let z =x[i]
+    //   x[i]=x[y]
+    //   x[y]=z
+    //   y++
+    // }
+    // for(let i=0;i<x.length;i++){
+    //     console.log(x[i])
+    // }
+
+    // for(let i=1;i<=5;i++){
+    //     for(let j=1;j<=5;j++){
+    //         if(i==1||i==5||j==1||j==5){
+    //         document.write("*")
+    //         }
+    //         else{
+    //             document.write("0")
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
+    
+    for(let i=1;i<=5;i++){
+        for(let j=5;j>=i;j--){
+            document.write("+")
+        }
+        for(let j=i;j>=1;j--){
+            if(j==i){
+                document.write("*")
+            }else{
+                document.write("+")
+            }
+        
+        }
+        for(let g=2;g<=i;g++){
+            if(g==i ){
+                document.write("*")
+            }else{
+                document.write("+")
+            }
+        }   
+        document.write("<br>")
+    }
+
+    for(let i=5-1;i>=1;i--){
+        for(let j=5;j>=i;j--){
+            document.write("+")
+        }
+        for(let j=i;j>=1;j--){
+            if(j==i||i==5){
+                document.write("*")
+            }else{
+                document.write("+")
+            }
+        
+        }
+        for(let g=2;g<=i;g++){
+            if(g==i || i==5){
+                document.write("*")
+            }else{
+                document.write("+")
+            }
+        }   
+        document.write("<br>")
+    }
+     
+   
+    </script>
+    
+</body>
+</html>

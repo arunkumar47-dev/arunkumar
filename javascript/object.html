@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td,tr{
+        border: 1px solid black;
+    
+    }
+</style>
+<body>
+   <script>
+    // let arr={accountid:"01",user:"arun",age:"18",accounttype:["current","saving"]
+    //     ,phonenumber:896570478
+    // }
+    // let a1=arr.map((i)=>i.accountid)
+    //  console.log(arr)
+//     let person1={
+//         name:"arun",
+//         age:21
+//     }
+//     let person2={
+//         name:"varun",
+//         age:21
+//     }
+//  function getname(person){
+//    console.log(person.age)
+//    console.log(person.name)
+//  }
+
+//  getname(person1)
+//  getname(person2)
+
+
+let a1=[{
+    lisanceid:780965487,
+    username:"arun",
+    vehicle:{ricecar:["tata","kia","thar"],fancycar:["bmw","ford"]},
+    vehicleno:{tata:9967,kia:5678,thar:7800,bmw:8967,ford:9786}, 
+    a1:function(){
+     return this.a1
+    }
+ },
+{
+    lisanceid:780965487,
+    username:"sakthi",
+    vehicle:{ricebike:["ktm","rn5","dok"],fancybike:["ns200","honda"]},
+    vehicleno:{ktm:9967,rn5:5678,dok:7800,ns200:8967,honda:9786},
+    a1:function(){
+     return this.a1
+    } 
+ },
+ {
+    lisanceid:780965487,
+    username:"pavish",
+    vehicle:{ricebike:["ktm","rn5","dok"],fancybike:["ns200","honda"]},
+    vehicleno:{ktm:9967,rn5:5678,dok:7800,ns200:8967,honda:9786},
+    a1:function(){
+     return this.a1
+    }    
+
+ }]
+document.write("<table>")
+    a1.map(i=> document.write("<tr><td>"+i.lisanceid+"</td><td>"+i.username+"</td></tr>"))
+    document.write("</table>")
+ 
+   </script> 
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            text-align: center;
+        }
+        div{
+            width: 200px;
+            height: 350px;
+            border: 2px black solid;
+            margin-left: 40%;
+            margin-top: 5%;
+            margin-bottom: 5% ; 
+            background-color: white;
+            border-radius: 8px;
+            padding: 3%;
+        
+        } 
+         .bu{
+            background-color:darkseagreen;
+            width: 40%;
+            height:40px ;
+            margin-bottom: 20%;
+            margin-left: 25%;     
+            color:crimson
+            
+            
+        } 
+        input{
+            margin: 5%;
+        } 
+     </style>
+    <h1>SIGN UP</h1>
+    <div>
+        <form action="" method="get">
+        <label for="">Name</label><br>
+        <input type="text" required name="name"><br>
+        <label for="">Phonenumber</label><br>
+        <input type="tel" name="phonenumber" maxlength="10" pattern="[6-9]{1}[0-9]{9}" required><br>
+        <label for="">Emilid</label><br>
+        <input type="email" name="email" required ><br>
+        <label for="">newpassword</label><br>
+        <input type="password" maxlength="6" required><br>
+        <label for="">confrompassword</label><br>
+        <input type="password" required maxlength="6"><br>
+        <button class="bu">submit</button>
+        </form>
+        input{
+            margin: 5%;
+        }
+
+    </div>
+
+    
+</body>
+</html>

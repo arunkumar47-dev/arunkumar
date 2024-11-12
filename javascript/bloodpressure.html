@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let blood=Number(prompt("diastolic blood pressure:"))
+        let blood1=Number(prompt("systolic blood pressure:"))
+        if(blood>=40 && blood<=60 && blood1>=70 && blood1<=90){
+            console.log("low")
+        }
+        else if(blood>=60 && blood<=80 && blood1>=90 && blood1<=120){
+            console.log("normal")
+        }
+        else if(blood>=80 && blood<=90 && blood1>=120 && blood1<=140){
+            console.log("pre hypertension")
+        }
+        else if(blood>=90 && blood<=100 && blood1>=140 && blood1<=160){
+            console.log("high:stage1 hypertension")
+        }
+        else if(blood>=100 && blood<=120 && blood1>=160 && blood1<=190){
+            console.log("high:stage2 hypertension")
+        }else{
+            console.log("abnormal")
+        }
+            
+        
+        
+    </script>
+</body>
+</html>else{
+    console.log("high")
+}

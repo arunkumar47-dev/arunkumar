@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = Number(prompt("a value is:"));
+      let b = Number(prompt("b value is:"));
+      let c = Number(prompt("c value is:"));
+      if (a > b && a > c) {
+        console.log(" a is greater then");
+        if (b > c) {
+          console.log(" b is middle then");
+          console.log("c is less then");
+        } else {
+          console.log(" c is middle then");
+          console.log("b is less then");
+        }
+      } else if (b > a && b > c) {
+        console.log(" b is greater  then");
+        if (a > c) {
+          console.log(" a is middle then");
+          console.log("c is lessthen");
+        } else {
+          console.log(" c is middle then");
+          console.log("a is lessthen");
+        }
+      } else {
+        console.log("c is greater then");
+        if (a > b) {
+          console.log("a is middle then");
+          console.log("b is less then");
+        } else {
+          console.log("b is middle then");
+          console.log("a is lessthen");
+        }
+      }
+    </script>
+  </body>
+</html>

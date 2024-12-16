@@ -27,6 +27,7 @@ export default function Formstate(){
  
 return(
     <>
+
     <form >
     <label>E-mail id</label>
     <input type="email" className="emailid" onChange={_handleEmail}value={formdata.emailid} />
